@@ -1,0 +1,370 @@
+{
+  "CorrelationId": "UI-20261004-184354-69239be1",
+  "Timestamp": "2026-10-04T18:43:54.3159663+00:00",
+  "Build": "9a7da43c-84c1-41e5-aa9e-c1f3560896c0",
+  "Steps": [
+    {
+      "Operation": "GetForegroundWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 5.2538
+    },
+    {
+      "Operation": "Current Foreground: IsWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.3829
+    },
+    {
+      "Operation": "Current Foreground: IsWindowVisible",
+      "Success": true,
+      "Data": {
+        "Visible": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.284
+    },
+    {
+      "Operation": "Current Foreground: GetWindowThreadProcessId",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ThreadId": 2460
+      },
+      "Failure": null,
+      "DurationMilliseconds": 2.2237
+    },
+    {
+      "Operation": "Current Foreground: Process.GetProcessById / Name",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ProcessName": "brave"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 6.5285
+    },
+    {
+      "Operation": "Current Foreground: Executable",
+      "Success": true,
+      "Data": {
+        "Executable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 22.7233
+    },
+    {
+      "Operation": "Current Foreground: GetWindowTextLength",
+      "Success": true,
+      "Data": {
+        "Length": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.7288
+    },
+    {
+      "Operation": "Current Foreground: GetWindowText",
+      "Success": true,
+      "Data": {
+        "Title": "India\u0027s Got Latent (2026) Season 2 Episode 11 (Netflix) Download full Movie \u0026 Watch Online on hindilinks4u - hindilinks4u -Watch Free Movies \u0026 TV Shows-Hindilinks4u - Brave",
+        "CharactersCopied": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 14.8785
+    },
+    {
+      "Operation": "Current Foreground: GetWindowRect",
+      "Success": true,
+      "Data": {
+        "X": -7,
+        "Y": -7,
+        "Width": 1550,
+        "Height": 830
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.3687
+    },
+    {
+      "Operation": "Self-window detection",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "IsOurProcess": false
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.5279
+    },
+    {
+      "Operation": "Foreground tracking refresh",
+      "Success": true,
+      "Data": {
+        "CurrentForegroundWindow": {
+          "Handle": 133286,
+          "ProcessId": 6560,
+          "ProcessStartTicks": 639267336786309253
+        },
+        "LastExternalForegroundWindow": {
+          "Handle": 133286,
+          "ProcessId": 6560,
+          "ProcessStartTicks": 639267336786309253
+        }
+      },
+      "Failure": null,
+      "DurationMilliseconds": 1.0796
+    },
+    {
+      "Operation": "Last External identity validation",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.3691
+    },
+    {
+      "Operation": "Last External: IsWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0027
+    },
+    {
+      "Operation": "Last External: IsWindowVisible",
+      "Success": true,
+      "Data": {
+        "Visible": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.001
+    },
+    {
+      "Operation": "Last External: GetWindowThreadProcessId",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ThreadId": 2460
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0006
+    },
+    {
+      "Operation": "Last External: Process.GetProcessById / Name",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ProcessName": "brave"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.1827
+    },
+    {
+      "Operation": "Last External: Executable",
+      "Success": true,
+      "Data": {
+        "Executable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 1.1973
+    },
+    {
+      "Operation": "Last External: GetWindowTextLength",
+      "Success": true,
+      "Data": {
+        "Length": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0044
+    },
+    {
+      "Operation": "Last External: GetWindowText",
+      "Success": true,
+      "Data": {
+        "Title": "India\u0027s Got Latent (2026) Season 2 Episode 11 (Netflix) Download full Movie \u0026 Watch Online on hindilinks4u - hindilinks4u -Watch Free Movies \u0026 TV Shows-Hindilinks4u - Brave",
+        "CharactersCopied": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.8766
+    },
+    {
+      "Operation": "Last External: GetWindowRect",
+      "Success": true,
+      "Data": {
+        "X": -7,
+        "Y": -7,
+        "Width": 1550,
+        "Height": 830
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0057
+    },
+    {
+      "Operation": "Direct application enumeration",
+      "Success": true,
+      "Data": {
+        "HWND": "0x304D2",
+        "ApplicationName": "Settings",
+        "ProcessName": "SystemSettings",
+        "HostedProcessId": null,
+        "HostedProcessName": null,
+        "Reason": "DirectEnumeration (not foreground tracking)"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 22.8408
+    },
+    {
+      "Operation": "Target Win32: IsWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x304D2",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0028
+    },
+    {
+      "Operation": "Target Win32: IsWindowVisible",
+      "Success": true,
+      "Data": {
+        "Visible": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0007
+    },
+    {
+      "Operation": "Target Win32: GetWindowThreadProcessId",
+      "Success": true,
+      "Data": {
+        "PID": 1316,
+        "ThreadId": 10348
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.001
+    },
+    {
+      "Operation": "Target Win32: Process.GetProcessById / Name",
+      "Success": true,
+      "Data": {
+        "PID": 1316,
+        "ProcessName": "SystemSettings"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.1804
+    },
+    {
+      "Operation": "Target Win32: Executable",
+      "Success": true,
+      "Data": {
+        "Executable": "C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 12.7252
+    },
+    {
+      "Operation": "Target Win32: GetWindowTextLength",
+      "Success": true,
+      "Data": {
+        "Length": 8,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0038
+    },
+    {
+      "Operation": "Target Win32: GetWindowText",
+      "Success": true,
+      "Data": {
+        "Title": "Settings",
+        "CharactersCopied": 8,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.9454
+    },
+    {
+      "Operation": "Target Win32: GetWindowRect",
+      "Success": true,
+      "Data": {
+        "X": 0,
+        "Y": 7,
+        "Width": 1536,
+        "Height": 816
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0049
+    },
+    {
+      "Operation": "UIA HWND validation",
+      "Success": true,
+      "Data": {
+        "HWND": "0x304D2",
+        "ProcessId": 1316,
+        "Apartment": "MTA",
+        "ThreadId": 5
+      },
+      "Failure": null,
+      "DurationMilliseconds": 3.8366
+    },
+    {
+      "Operation": "UIA Root / AutomationElement.FromHandle",
+      "Success": true,
+      "Data": {
+        "RootAvailable": true,
+        "Apartment": "MTA"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 125.9643
+    },
+    {
+      "Operation": "UIA Root properties",
+      "Success": true,
+      "Data": {
+        "Name": "[TEXT OMITTED]",
+        "ControlType": "ControlType.Pane",
+        "AutomationId": null,
+        "ClassName": "Windows.UI.Core.CoreWindow"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 2.1388
+    },
+    {
+      "Operation": "Immediate Children",
+      "Success": true,
+      "Data": {
+        "Count": 0,
+        "Truncated": false,
+        "Children": []
+      },
+      "Failure": null,
+      "DurationMilliseconds": 6.6529
+    },
+    {
+      "Operation": "Bounded tree / Interactive Elements",
+      "Success": true,
+      "Data": {
+        "Depth": 3,
+        "MaximumElements": 100,
+        "Count": 0,
+        "Truncated": false,
+        "Status": "Limited",
+        "Controls": []
+      },
+      "Failure": null,
+      "DurationMilliseconds": 29.8
+    }
+  ]
+}

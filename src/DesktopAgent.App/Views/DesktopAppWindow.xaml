@@ -1,0 +1,56 @@
+<Window x:Class="DesktopAgent.App.Views.DesktopAppWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Desktop Agent" Width="1080" Height="720" MinWidth="820" MinHeight="560" WindowStartupLocation="CenterScreen" ShowInTaskbar="True" AutomationProperties.Name="Desktop Agent application">
+    <Grid>
+        <Grid.ColumnDefinitions><ColumnDefinition Width="230"/><ColumnDefinition/></Grid.ColumnDefinitions>
+        <Border Background="#171A2B" Padding="22"><Grid>
+            <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+            <StackPanel><Border Width="62" Height="62" CornerRadius="32" HorizontalAlignment="Left"><Border.Background><RadialGradientBrush Center="0.35,0.3" GradientOrigin="0.3,0.25"><GradientStop Color="#A9A3FF" Offset="0"/><GradientStop Color="#6256E8" Offset="0.62"/><GradientStop Color="#332B78" Offset="1"/></RadialGradientBrush></Border.Background><TextBlock Text="⌁" Foreground="White" FontSize="34" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border><TextBlock Text="Desktop Agent" Foreground="White" FontSize="21" FontWeight="SemiBold" Margin="0,15,0,3"/><TextBlock Text="Your Windows companion" Foreground="#AAB1C8"/></StackPanel>
+            <StackPanel Grid.Row="1" Margin="0,34,0,0"><Button x:Name="HomeButton" Content="⌂   Home" HorizontalContentAlignment="Left" Background="#665CF6" Click="Home_Click"/><Button x:Name="AssistantButton" Content="✦   Assistant" HorizontalContentAlignment="Left" Background="Transparent" Click="Assistant_Click"/><Button x:Name="ApplicationsButton" Content="▦   Applications" HorizontalContentAlignment="Left" Background="Transparent" Click="Applications_Click"/><Button x:Name="ProjectsButton" Content="◇   Projects" HorizontalContentAlignment="Left" Background="Transparent" Click="Projects_Click"/><Button x:Name="WorkspacesButton" Content="▤   Workspaces" HorizontalContentAlignment="Left" Background="Transparent" Click="Workspaces_Click"/><Button x:Name="PermissionsButton" Content="◈   Permissions" HorizontalContentAlignment="Left" Background="Transparent" Click="Permissions_Click"/><Button x:Name="ActivityButton" Content="◷   Activity" HorizontalContentAlignment="Left" Background="Transparent" Click="Activity_Click"/><Button x:Name="DeveloperButton" Content="⌘   Developer" HorizontalContentAlignment="Left" Background="Transparent" Click="Developer_Click"/><Separator Margin="4,10" Background="#354057"/><Button Content="⚙   Settings" HorizontalContentAlignment="Left" Background="Transparent" Click="Settings_Click"/><Button Content="◉   Show Character" HorizontalContentAlignment="Left" Background="Transparent" Click="ShowCharacter_Click"/></StackPanel>
+            <TextBlock Grid.Row="2" Text="Text-first desktop assistant" Foreground="#7F889F" FontSize="12"/>
+        </Grid></Border>
+        <Grid Grid.Column="1" Margin="34,28">
+            <ScrollViewer x:Name="HomePanel" VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBlock Text="Welcome back" FontSize="30" FontWeight="SemiBold"/>
+                    <TextBlock Text="Your desktop companion" Foreground="{DynamicResource MutedBrush}" Margin="0,6,0,20"/>
+                    <Border Background="{DynamicResource CardBrush}" CornerRadius="16" Padding="20" Margin="0,0,0,16"><StackPanel>
+                        <TextBlock Text="Developer Activity" FontSize="18" FontWeight="SemiBold"/>
+                        <TextBlock x:Name="DeveloperActivityText" TextWrapping="Wrap" Margin="0,8"/>
+                        <Button Content="View developer sessions" Click="Developer_Click" HorizontalAlignment="Left"/>
+                    </StackPanel></Border>
+                    <Border Background="{DynamicResource CardBrush}" CornerRadius="16" Padding="20">
+                        <StackPanel><TextBlock Text="Agent" FontSize="18" FontWeight="SemiBold"/>
+                            <TextBlock x:Name="AgentConnectionText" Margin="0,8,0,0" TextWrapping="Wrap" Foreground="{DynamicResource MutedBrush}"/>
+                            <TextBlock x:Name="AgentStateText" FontSize="24" FontWeight="SemiBold" Margin="0,6,0,0"/>
+                        </StackPanel>
+                    </Border>
+                    <WrapPanel Margin="0,14,0,14"><Button Content="Ask Agent" Click="Assistant_Click"/><Button Content="Applications" Click="Applications_Click"/><Button Content="Projects" Click="Projects_Click"/><Button Content="Workspaces" Click="Workspaces_Click"/></WrapPanel>
+                    <Border Background="{DynamicResource CardBrush}" CornerRadius="16" Padding="20" Margin="0,0,0,16">
+                        <StackPanel><TextBlock Text="Projects" FontSize="18" FontWeight="SemiBold"/>
+                            <TextBlock x:Name="CurrentProjectText" Margin="0,8,0,0" TextWrapping="Wrap"/>
+                            <Button Content="Clear current project" Click="ClearProject_Click" HorizontalAlignment="Left"/>
+                            <ItemsControl x:Name="RecentProjects"><ItemsControl.ItemTemplate><DataTemplate>
+                                <Button Content="{Binding Name}" Click="OpenRecentProject_Click" HorizontalAlignment="Left"/>
+                            </DataTemplate></ItemsControl.ItemTemplate></ItemsControl>
+                        </StackPanel>
+                    </Border>
+                    <Border Background="{DynamicResource CardBrush}" CornerRadius="16" Padding="20" Margin="0,0,0,16">
+                        <StackPanel><TextBlock Text="Recent workspaces" FontSize="18" FontWeight="SemiBold"/>
+                            <TextBlock x:Name="NoWorkspacesText" Text="Create a workspace to prepare your apps together." Foreground="{DynamicResource MutedBrush}" TextWrapping="Wrap" Margin="0,8,0,0"/>
+                            <ItemsControl x:Name="RecentWorkspaces"><ItemsControl.ItemTemplate><DataTemplate>
+                                <Button Content="{Binding Name}" Click="Workspaces_Click" HorizontalAlignment="Left" Margin="0,6,0,0"/>
+                            </DataTemplate></ItemsControl.ItemTemplate></ItemsControl>
+                        </StackPanel>
+                    </Border>
+                    <Border Background="{DynamicResource CardBrush}" CornerRadius="16" Padding="20">
+                        <StackPanel><TextBlock Text="Recent activity" FontSize="18" FontWeight="SemiBold"/>
+                            <ListBox x:Name="HistoryList" Margin="0,8,0,0" BorderThickness="0" Background="Transparent" MaxHeight="190">
+                                <ListBox.ItemTemplate><DataTemplate><TextBlock Text="{Binding Message}" TextWrapping="Wrap" Margin="0,3"/></DataTemplate></ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+            <ContentControl x:Name="PageHost" Visibility="Collapsed"/>
+        </Grid>
+    </Grid>
+</Window>

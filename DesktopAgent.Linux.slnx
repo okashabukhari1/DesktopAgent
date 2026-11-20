@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DesktopAgent.Core/DesktopAgent.Core.csproj" />
+    <Project Path="src/DesktopAgent.Desktop/DesktopAgent.Desktop.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DesktopAgent.Desktop.Tests/DesktopAgent.Desktop.Tests.csproj" />
+  </Folder>
+</Solution>

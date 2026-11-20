@@ -1,0 +1,834 @@
+[
+  {
+    "path": "src/DesktopAgent.App/App.xaml",
+    "sha256": "6940ec1da8c8af48f7fce8fd29ed29d50ab042f95df4d17fda47060605ccc5e9"
+  },
+  {
+    "path": "src/DesktopAgent.App/App.xaml.cs",
+    "sha256": "e0b1698d01cffc929fa1a3b2c74af0535835a0e7538012444721177d9f0a0607"
+  },
+  {
+    "path": "src/DesktopAgent.App/DesktopAgent.App.csproj",
+    "sha256": "725f88ba2a80fcf0e0ecc88eadd58278490f7d2058b408f6b1f6e06e939c7f95"
+  },
+  {
+    "path": "src/DesktopAgent.Core/DesktopAgent.Core.csproj",
+    "sha256": "e2c08643e21eba9123e4b319840fec508efc44b473a7cab491d6188e5f6905ca"
+  },
+  {
+    "path": "src/DesktopAgent.DevHook/DesktopAgent.DevHook.csproj",
+    "sha256": "dc0329ae3816e21dc50e90bb06dc74119575088563ea5671355bdeb2bb4542f2"
+  },
+  {
+    "path": "src/DesktopAgent.DevHook/Program.cs",
+    "sha256": "9cfabae9fabbb264085ae112fd43d83557705b430663543ddbc23a105589c13f"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/DesktopAgent.Infrastructure.csproj",
+    "sha256": "079fe8179d9b21e42d7181814871cfeedfc171f4d4bcc96f9053e6df623aa0a5"
+  },
+  {
+    "path": "src/DesktopAgent.PythonWorker/README.md",
+    "sha256": "dc9a9c16ab27c13426ef17aabb8e6b61460a392c4b4e2bbb798c3552f1f3f554"
+  },
+  {
+    "path": "src/DesktopAgent.PythonWorker/requirements.txt",
+    "sha256": "97a070f6bd6af0b164df6ed54e228a2a2bc4ea231af87e3af8c5a5b360318783"
+  },
+  {
+    "path": "src/DesktopAgent.PythonWorker/validation.py",
+    "sha256": "8e6765da2a74215daea45f985661844f47d066b610fd3e9f2f3d929c52f8c63d"
+  },
+  {
+    "path": "src/DesktopAgent.PythonWorker/windows.py",
+    "sha256": "124665fb5f94a1401860d02c2e5fc60dfefc234f7fed37f76a29821e51f2d974"
+  },
+  {
+    "path": "src/DesktopAgent.PythonWorker/worker.py",
+    "sha256": "6334301b655a8dbb0c2f2dcd0ae40fbf13d1b9cbc5a96a67151a4aa63e4f5e06"
+  },
+  {
+    "path": "src/DesktopAgent.PythonWorker/tests/test_protocol.py",
+    "sha256": "3b194b7ab1f08c269f2906ffc3db31abc0a2bf0fa31f4d3361b90d5470417946"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Ai/AgentToolRegistry.cs",
+    "sha256": "c4e4500c15b957cfaa77e2b6b76269416ff02ec4e956415cf4532d96c7cf4641"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Ai/AiProviderErrors.cs",
+    "sha256": "e47f517303735674d8789281e458aa0ebf139adafcdf4a420e736d0b2ae4370d"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Ai/AssistantConversationService.cs",
+    "sha256": "0fed38935387f7b769fa19d4401fbe4097e1ad231eea600e10eb3e383f01afd7"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Ai/ComputerAgentToolRouter.cs",
+    "sha256": "b7bd639470dca51fac55c62ca91d9d9aab7f3e132e568c00a46da415baf8e49b"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Ai/OpenAiCompatibleProvider.cs",
+    "sha256": "792a935bf47c0437bd73b162dc558d93d5c4533fece5a0773596d28f4e9dfd84"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Ai/ProviderCredentialNames.cs",
+    "sha256": "b703706a6c481d647c7487312dbd578b46c029031e467ed1ffa19293f225eef4"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Ai/WindowsAgentTools.cs",
+    "sha256": "d255c04a23cda2849409e0c5280273c1e21d539d440671dfa9afbe1bdfafb9b7"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Ai/WindowsCredentialStore.cs",
+    "sha256": "b35ee9cdfced563e77ccb6fca225cfdfea9c7cdbbba676837468c52d27786fd2"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Applications/JsonApplicationCatalogRepository.cs",
+    "sha256": "2819f9cb9f5df747782ba5be81fa9eb7679f6ba58c1dcc05e9498cc28f8f8667"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Applications/WindowsApplicationDiscoveryProviders.cs",
+    "sha256": "c07695e2b5ddce09fd5690fa73492ae1805e04e361bc5db5528437a8aa3ed394"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Automation/ComputerCommandService.cs",
+    "sha256": "ef0342a3e6c891d9e3ec6e8a4bef64e75ab01dd6647a8787ae3259b1c0e06b0e"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Automation/JsonActionHistoryService.cs",
+    "sha256": "e543928c5bbb2b754d915c6507da3d49e9356d16d4d2609013c5630653ec7aaa"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/ComputerUse/ComputerActionExecutor.cs",
+    "sha256": "6e1130d946b133c6d6fe4fb2ce37fb871989434e6fd9ca87057aae75f5d4b65f"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/ComputerUse/ComputerActionTools.cs",
+    "sha256": "1fe5a06e660b56d65f5545e471167b5c9e76d8da482f23daef1dd7ca802bf2ad"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/ComputerUse/ComputerUseSession.cs",
+    "sha256": "51ebacc2ef3197cb6e092e15e6ee73452744dfb7679712c901b2f3e1881c465c"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/ComputerUse/HybridComputerBackend.cs",
+    "sha256": "5d891b8d37243a81649794eb23199f026a84efa467fafc81cc5261585d6668a7"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/ComputerUse/PythonComputerBackend.cs",
+    "sha256": "bee0a0fde2833699c097ad7d82c3e388b49c01d6c8d635edf3274cb9b166d0d3"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/ComputerUse/PythonWorkerClient.cs",
+    "sha256": "24f3a206f62a87d5388b9fe7d4809a48aaaf74f59ebfd5302300f43c6b936000"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/ComputerUse/WindowInput.cs",
+    "sha256": "e49a06c1dcc92cebaec39726f32430b9661b42a63cc42a9632a4b5015300644d"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Developer/ClaudeHookInstaller.cs",
+    "sha256": "87eb81996bb5a0e16fc0c0688df7b6be916abbc4557c2efa6c139991323172f2"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Developer/DeveloperAdapters.cs",
+    "sha256": "b0044e4d41ef40b03a132c53ef0110c8e7f1c3df9a26efd793fa282739ea4493"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Developer/DeveloperEventNormalizer.cs",
+    "sha256": "3c110a11d319e03a3571648d35e0f5b57da0151283f2b043345ba1b1df6fb835"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Developer/DeveloperPipeProtocol.cs",
+    "sha256": "004bc9a6bd6253c791f8501fa76162ec5fb6ce28144a73b7ed32697c4d61b5f0"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Developer/DeveloperPipeServer.cs",
+    "sha256": "de73813a7d9fbf6868b65484337eda79db67492b38b588a10d8b03fe7a32c50d"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Developer/DeveloperSupervisor.cs",
+    "sha256": "003e7ff91e89758ce33dd65436885c4c4436087c98630493d694219400c18325"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Developer/DeveloperTools.cs",
+    "sha256": "a65159c0a1ef39d688a7884358d17cbd9bc2696a542b60c4cb9a6db71cb911ac"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Developer/OpenCodeAdapter.cs",
+    "sha256": "3c4f2c1a906770554c79e24e84c7b06b02bec47f553fad955b7d6802c348dc61"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Logging/FileLoggerProvider.cs",
+    "sha256": "148a1e92625a6306b603ba405a90ecd50272f4d825a8b6bcafa4574f239ca764"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Permissions/JsonPolicyService.cs",
+    "sha256": "e6b6b835590e5a423a3ce24554a14a4a79e27db16530dc135d61103c688489d4"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/CodeRetrievalBudget.cs",
+    "sha256": "73f16d508e36e35dbc3a6ad926dd9eeb20bcb42080c0d007fe88d9481dea98f9"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/ProjectCatalog.cs",
+    "sha256": "277b3b0681fbdb9a03f2bef7298221acc30db0bbe7ac1c52caf9bd89aa07018c"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/ProjectDiscoveryService.cs",
+    "sha256": "61b0e8eb69eb09ad089915262b66cfbff343ea8ce33f308b39094cb71ef0ffbe"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/ProjectFileOpenService.cs",
+    "sha256": "76c5650c1fffd38e15f115069125fd446b1760153d1bd79a8865c66e23410384"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/ProjectFileService.cs",
+    "sha256": "7f18697f82e344c95c9121a54aa35b408cd626700fc2c2653282f2d2580abd71"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/ProjectFileTools.cs",
+    "sha256": "e13d465556f2a81cd212039401c221f670ef0f1c6f2e9dbe2f9953c1b714552c"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/ProjectOpenService.cs",
+    "sha256": "b3fa24182fdbc694e9cccc36c1bd3a5058d86e7bab437928ab3fd323480ccbaf"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/ProjectPathGuard.cs",
+    "sha256": "7c18b5b90016d22b512f802a974646c601455f646d3601c4dc3b88a20c027c15"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/ProjectSearchService.cs",
+    "sha256": "d4560034e79d72ca24553164108f1d80b26337e1f4565c221bdcaaa432e3eba4"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/ProjectTools.cs",
+    "sha256": "4ebb5c645ae60cfb0357db6666d7901a4d90d4402a51fb919e27eca3068c7e7b"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Projects/SecretProtection.cs",
+    "sha256": "3731bebc316f2eaa08ed0f0f9cb721e65a8fa7bc8ef6ea1622ce2abcb82df035"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Settings/JsonSettingsService.cs",
+    "sha256": "272428c1ce35181bab398cf9dcbff4f6ce5e401786236e0c3fd3b44e442cf2c3"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/UiAwareness/UiObservationWorker.cs",
+    "sha256": "aa4ae810831120ad5804627a442872afc68ea7f2f74e136a2c7493561d892dca"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/UiAwareness/UiReadContract.cs",
+    "sha256": "805309dbd8ccc044aeb5699891c70de7bc6ba14ed1d521167e5a59e7b49d8077"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/UiAwareness/UiTools.cs",
+    "sha256": "d85f59fa3c647ea88f7a5cbf8d82ba9e563f870f56615699568657b9b65aa54d"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/UiAwareness/WindowsComputerActions.cs",
+    "sha256": "a3bd766f6f7f593e1df480a9ab2d782d6edadeaabb6bc01f50251736cc64749c"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/UiAwareness/WindowsDiagnosticsService.cs",
+    "sha256": "89ce674aab017f6351e1b5e69d11e621212c82846ba80bbb7109410e488179e6"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/UiAwareness/WindowsUiAutomationService.cs",
+    "sha256": "c7cd06b44677e0c2d6de3e3c9b1fed8bc0ba75bfe0ea36fd3d4d59e83f391f29"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/UiAwareness/WindowsWindowTracking.cs",
+    "sha256": "941dd7dfe603401c785d62b26335d3c9a6b78f35682ac83623a0c62de91cf809"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Windows/WindowsMonitorService.cs",
+    "sha256": "c76caa0d1c31e4ba17d93c1a37cba4d78d88dbef84206b121c26b1590bfe52fe"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Windows/WindowsStartupService.cs",
+    "sha256": "ad023eb14ba46099938809e481509a8b33d47e3092f6756dc591682c244ba3ad"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Workspaces/JsonWorkspaceRepository.cs",
+    "sha256": "cb3d6b4d3d81b6914029836b9c2d4a28c4fd8ff1117b9b1118d002abaf4f1a24"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Workspaces/WorkspaceLaunchEngine.cs",
+    "sha256": "57781b61d4d53eb19a8954b01cd17e16d839e30f8698473210d6a791fe0dca09"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Workspaces/WorkspaceService.cs",
+    "sha256": "244c73c3cf9f623b392d929b28379b095b97a2a1e516a98857242cde9385cdb1"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Windows/Automation/NativeMethods.cs",
+    "sha256": "f53ddc5dbd7d329ad0b8c837586d80dce7b8c292e0773733e1f418ed211ef01a"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Windows/Automation/WindowsApplicationControlService.cs",
+    "sha256": "b377a80eb366dfc01710cff7022a2e4016d916ec1efb6d20df089d34d30960ba"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Windows/Automation/WindowsExecutableLocator.cs",
+    "sha256": "8d845f60ada32ff93e8549745ce25a890c9829cf00eda17241c4e7ba4b4c4b06"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Windows/Automation/WindowsExternalWindowService.cs",
+    "sha256": "2419023a46925870f88e4c856641a4accca5cf82b0a3590a14af6419d4c1ca79"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Windows/Automation/WindowsProjectEditorLauncher.cs",
+    "sha256": "3e1d81d9ea60cb7e77249fb14fbb5bd78614e5cabe55fbd0bfe8b0022f6be09b"
+  },
+  {
+    "path": "src/DesktopAgent.Infrastructure/Windows/Automation/WindowsShellService.cs",
+    "sha256": "11b29eac3f4b23e9882d9f822168d8d3ab4b1d5e07c870606c04d33f717ae7f5"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Ai/AiModels.cs",
+    "sha256": "9fb78f43bab2ec9b72f7032b7497869e87624843b9c0c926cc35bc65bf43d480"
+  },
+  {
+    "path": "src/DesktopAgent.Core/ComputerUse/ComputerUseModels.cs",
+    "sha256": "e6e1059a383173f902567fe6d1e35ca286dbf6537acfdd23201c854e701ffb13"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Developer/DeveloperModels.cs",
+    "sha256": "fbbd7e094614cf6aa980af44022a11bb7d6a29a89061363e240039210efdf3de"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Enums/AppTheme.cs",
+    "sha256": "f91aac90b8274d8b7d56be927da128f0b396b6b0d1fd9d025f3dda816c0a6399"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Enums/CharacterState.cs",
+    "sha256": "2c62be93bebe7caf8006192dd07f4ea1ca84127d3710ff058f46d004d42b9a69"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Interfaces/ICharacterService.cs",
+    "sha256": "c8ee2d992a47008b7b260d99775e643dec79fab76c0707310a706dc11ce44dd5"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Interfaces/IMonitorService.cs",
+    "sha256": "b29bf14f97345ffe344630c82bacc21aa540ed32a6a2738594fb2597030980fa"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Interfaces/ISettingsService.cs",
+    "sha256": "c04b9eedab9133c59d902f373aee2cbaacddef73139e319fb51377b40dfc9895"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Interfaces/IStartupService.cs",
+    "sha256": "405b77e50c9307e98c5132b2780c7990c2d6b1b9c354fa78c1bc3d04129e3a65"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Interfaces/IWindowService.cs",
+    "sha256": "5d94f9b4de22ecb5d4db0a91e0a0f67859a22e0395b5db88a97da094a9b3c117"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Models/AppSettings.cs",
+    "sha256": "64da3a02c6febf7b589d9ca339656f7575cafae1e8210a0c34ac8530cebd86d2"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Models/CharacterPosition.cs",
+    "sha256": "a47cce0255e509054b5415a491d74d12f7c1f41c9bc135a79f4e61518ac144a5"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Models/MonitorWorkArea.cs",
+    "sha256": "6ce5e69d28d68868d45b2387f565de33fe1d333d89104f3f99f2bf02f24fd8da"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Models/ValidatedPosition.cs",
+    "sha256": "1d0768a934a32dc596621a37d084b7ee37fa46306eec3e8c4ceac8f43a8c9e38"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Permissions/AgentCapabilities.cs",
+    "sha256": "db190d3f23a668cf4e3e8934cb2203638deb8f34af6b3f83f524c6f330900976"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Permissions/ComputerCommandCapabilities.cs",
+    "sha256": "4755e576fdc043324950f8ed5c0b5c9e4e69ac69272503ca5237f74e0200508e"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Permissions/PermissionInterfaces.cs",
+    "sha256": "f346be2251b5449a19e8b964a904c066cbc0a98cabdca38bfbf065205a67fbb5"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Permissions/PermissionModels.cs",
+    "sha256": "930e0d7d4cbb5de63a89f76446a3c9407cfb75df74644c4e080e635a6b6eed3f"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Permissions/WorkspaceCapabilities.cs",
+    "sha256": "b9f15f8708df7d51d50b3cbf88788bd99fde0408477e37771ca89992f90f9852"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Projects/FileIntelligenceModels.cs",
+    "sha256": "2678598962aefbf7706c4a8820e4711776f2e2b12c31b0e43ca6dde9fe63edde"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Projects/ProjectModels.cs",
+    "sha256": "0d28ea988ac21d67d071f2ce9a2201390ccf1975ff0243485b400163fec4916d"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Services/CharacterService.cs",
+    "sha256": "fe2867b6a74d0b3fec36f670465db274eb0d56a3b6e3d7d5d307a30e68cc4f6a"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Services/PositionValidator.cs",
+    "sha256": "b0db2f50518425800bafc34888c208bcc4f9191b3476300e0174ad3a7635ea20"
+  },
+  {
+    "path": "src/DesktopAgent.Core/UiAwareness/UiAlgorithms.cs",
+    "sha256": "539a4355374017928b73f07da1356ec7e443eb57ef6400f11d6c08b24f8bd57a"
+  },
+  {
+    "path": "src/DesktopAgent.Core/UiAwareness/UiModels.cs",
+    "sha256": "2d9f58e831a59857dac8adced8593f4d27126ccbce3a3f6a66f4855258f7ff6b"
+  },
+  {
+    "path": "src/DesktopAgent.Core/UiAwareness/WindowTargeting.cs",
+    "sha256": "fdaa34c5b99db1077b01793c6484c52775f832a86bb1e20e0c7327b3d3d58fd8"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Workspaces/Enums/WorkspaceEnums.cs",
+    "sha256": "d00939d849d22dde3c489d21824edd06bd722bac8a2cbfcae3c6db5cddf32daa"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Workspaces/Interfaces/WorkspaceInterfaces.cs",
+    "sha256": "640d2e27ec7e8a55088320ec5c0c1950ba6835d61abf94f2f391d6784971ecc8"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Workspaces/Models/WorkspaceDefinition.cs",
+    "sha256": "aabf2bba7fbe5e01082e89c16090253a6700158ed85bc387a0cec97491d0f065"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Workspaces/Models/WorkspaceRuntimeModels.cs",
+    "sha256": "eb4ff4091764aaa00fb3ff5097580e1a6657868850ae0d652739115443eb6719"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Workspaces/Services/WorkspaceValidator.cs",
+    "sha256": "970e4405ba530b3ff1334c558a402344b6f00fee3887387c3d40bcbec07c052c"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Enums/ActionStatus.cs",
+    "sha256": "12a4b21d9b63d82cc6bcc4b26d88f0941c59624c640074e94fdcae34badb9aec"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Enums/ComputerCommandType.cs",
+    "sha256": "80b3fdbbdbe3dbd3939ea3717db971c1b5096e81359e424078dfcffaaa27edae"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Enums/ExternalWindowState.cs",
+    "sha256": "8703bce3fe6b28df7b9cbb180720d6c910bc0c41575508e5e63a8dda961e4b6f"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Enums/WindowLayout.cs",
+    "sha256": "cee279b42600071868f5370a3014fc0e7877d36d637abcf858b2ac4bea813fd4"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Interfaces/IActionHistoryService.cs",
+    "sha256": "69b8252b9402aa14ae81648b36e44a22124b02aa7b5bad8a8fe1534cbbed293d"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Interfaces/IApplicationControlService.cs",
+    "sha256": "fa7fb476fb72d07969f280e9f69e7b854f37fdab84aa2d0f2a5425546ef55eb2"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Interfaces/IApplicationResolver.cs",
+    "sha256": "a54265184856503259a7f4c3e751de887a54dc74e13e54691221232c401af98a"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Interfaces/IComputerCommandParser.cs",
+    "sha256": "eb6df33b7e95d0080054c37d2c0570d4e32efa35da7ddfa395213fd77661dc61"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Interfaces/IComputerCommandService.cs",
+    "sha256": "efb64ee0406477af46c020ba0a2e767a3701fe2d1dfaebb016551a025103e394"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Interfaces/IComputerController.cs",
+    "sha256": "69386d548996b6afb1293c3ca4f2b34688d4c09c2da5eeabf7d5f75f99d0c30a"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Interfaces/IExecutableLocator.cs",
+    "sha256": "004411851783bcb6b6dfa03c81802511d55fec4ebd703a81ce05370537e1dfd0"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Interfaces/IExternalWindowService.cs",
+    "sha256": "1201c05c8da3772d8e61fbe92767d90088e705e8426834b108204e376f874d8d"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Interfaces/IShellService.cs",
+    "sha256": "cd2291fd002e3d80df1cde4d06c000cb86713d88b02be2b18701c5a22e69aff9"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Models/ActionHistoryEntry.cs",
+    "sha256": "9b115c98e5b9b8cb37cb6da7a507bed6143a793699d2a43489301e5af1cefe9a"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Models/ApplicationDefinition.cs",
+    "sha256": "2963ed8b94c302bb09d52a9ec4e6d3758370bda13ad70c25dbb415c4308bd0d3"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Models/ComputerActionResult.cs",
+    "sha256": "d2d7ec85e3c43b69ca8f8131983f9df9c292db8944ab25df056dbcc88c7ce780"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Models/DisplayMonitorInfo.cs",
+    "sha256": "138fba692cb8bc5a28e9b091730fd7d22074abb0e97116274a65e3f84969e4b3"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Models/OpenWindowInfo.cs",
+    "sha256": "e352799e9c6b4000ade5904d11372b088724802c4f9f5ec6ed87bd0f6d071cb3"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Models/ParsedComputerCommand.cs",
+    "sha256": "7558dacbcd3cf68a336626de7b0d4f4bb82f3c1fce7ce51a60bdbc831708d180"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Models/RunningApplicationInfo.cs",
+    "sha256": "649d52c311b60f32d67fb705d7da66f1d7274f1b8a8a1b2136a9a8e0db3c0a24"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Models/WindowRectangle.cs",
+    "sha256": "eb02c87f4c45a9e69c96995d8d580fafa2d26ad6d710807fabfed19f76be9d13"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Services/ActionHistoryService.cs",
+    "sha256": "c01fc80cff28ac48be4546eb17889b411e790a1d457dfcc10fda27f59b285aee"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Services/ApplicationResolver.cs",
+    "sha256": "f9220bd07b625a1a98ebc417a0ecb46196a51c65d25634c9a4b918420bae94b6"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Services/ComputerCommandParser.cs",
+    "sha256": "f169250fae4e834faa0b2c83660b32799a63b0ac76a5f12df31fe622c63f4e63"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Services/ComputerController.cs",
+    "sha256": "5b736d64526902b46d607845897a81fd98a456ad83d2cc0456e28ed8577d4bea"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Automation/Services/WindowLayoutCalculator.cs",
+    "sha256": "1643b51eed63afbb83a3585208ad3c6d4d216db6516706d92d29ca54c12f0d4b"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Applications/Enums/ApplicationCatalogEnums.cs",
+    "sha256": "846a125517913b16f5a1edf761ec157e52f64432c86529c5064bdda5bd6e5710"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Applications/Interfaces/ApplicationCatalogInterfaces.cs",
+    "sha256": "afc2c3736c1d9e52c356ac4f4513cc5b301afacf58310a7034a3b03c63ae891e"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Applications/Models/ApplicationCatalogModels.cs",
+    "sha256": "1d3c7f81a23bf0aa41f5285fcd105c8392dc2ce4e5a4c8e0d2a783aa448bba46"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Applications/Services/ApplicationCatalog.cs",
+    "sha256": "f2643b4067edc3a1de45b450b3976db09b7309c1dd8fca621d8202f8576b86d9"
+  },
+  {
+    "path": "src/DesktopAgent.Core/Applications/Services/ApplicationNameNormalizer.cs",
+    "sha256": "2dd84fccfe0ff317511e36092614b253afe2b042de83a794e29e21434fe0ee2d"
+  },
+  {
+    "path": "src/DesktopAgent.App/Controls/CharacterControl.xaml",
+    "sha256": "3ea8821e8c5553720879e15e79f17efbe9c13cccda8279fdda498707722d9de6"
+  },
+  {
+    "path": "src/DesktopAgent.App/Controls/CharacterControl.xaml.cs",
+    "sha256": "d80569daa317d4379a38dc2e6ce48bf6e69b109694dfaae3be5e9a634c36089f"
+  },
+  {
+    "path": "src/DesktopAgent.App/Services/AgentActionApprovalService.cs",
+    "sha256": "ae0c9db7b2057fe7e5776895eaab3aad296a3aae735811332db781db71550b33"
+  },
+  {
+    "path": "src/DesktopAgent.App/Services/ComputerUseSafety.cs",
+    "sha256": "b54feb54016f38eca4ad443fc8a7f242bb4434336a0d453bd9c425cdbff1f92c"
+  },
+  {
+    "path": "src/DesktopAgent.App/Services/TrayIconService.cs",
+    "sha256": "a57ff294a7c87d21d4724cbb2c15adb66dfe557a96edf0ac04121ebd91ebd5c6"
+  },
+  {
+    "path": "src/DesktopAgent.App/Services/WindowService.cs",
+    "sha256": "1b1cb45c2a502e22daa66209daace309280f00378daa3cede394ece033a65b71"
+  },
+  {
+    "path": "src/DesktopAgent.App/Themes/BaseTheme.xaml",
+    "sha256": "eb5617b7fa71d24f3c747abf84aa33bbbbd236ad6da98e9e28197e72574648c5"
+  },
+  {
+    "path": "src/DesktopAgent.App/ViewModels/CharacterViewModel.cs",
+    "sha256": "6cede5b201f1d90979d58257ee4803349abedbe39d88f7fc15712fe3b3763123"
+  },
+  {
+    "path": "src/DesktopAgent.App/ViewModels/CharacterWindowViewModel.cs",
+    "sha256": "7bec04f566fcc0e464bb7085b240b6049b3984d6368f30dc65a9848f162a5c4b"
+  },
+  {
+    "path": "src/DesktopAgent.App/ViewModels/ObservableObject.cs",
+    "sha256": "4490ac2246f1a954d3dc6daa2dc3607d3059a8595b1836c2365ef1432fcb2c3c"
+  },
+  {
+    "path": "src/DesktopAgent.App/ViewModels/RelayCommand.cs",
+    "sha256": "d8f3e09320247253414ca8454dec1a41dd2e4f60eb8d370e505bb841f2f302d9"
+  },
+  {
+    "path": "src/DesktopAgent.App/ViewModels/SettingsViewModel.cs",
+    "sha256": "801505395df9df85133650033f0be59a1ee35eba597071c02e5d72bedafece65"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/AssistantView.xaml",
+    "sha256": "e643933b7f70a28f286d268efac604c7d27211cbd775b9c7274537b31706edb8"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ActivityView.xaml",
+    "sha256": "4538abf816af99c5b3ff6361b03a78c82ba4bb5fa63d5e9f7557dee90d355ed4"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ActivityView.xaml.cs",
+    "sha256": "fd149ef579c8be5725bb5d4e7aa0313543fe140444c9b03bebc5264a3cd28cc1"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/AiSettingsView.xaml",
+    "sha256": "77c85ecb16ffff56a01cfdd576362785ad69a21f3bd854eae8291943132b1b45"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/AiSettingsView.xaml.cs",
+    "sha256": "a738d6d28e049a154e71b78adade35d2bdf9adf63ba3d948d356edf460da888d"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ApplicationPickerWindow.xaml",
+    "sha256": "ddab961d9cdec800ca7a02e34a0b8bb27921323b6974f250c9f48b3bcfa2be27"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ApplicationPickerWindow.xaml.cs",
+    "sha256": "0bb6e7192d6e992ffea2569fdf35264ee95c2b38f80d93ee569dc677e2ff2abf"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ApplicationsView.xaml",
+    "sha256": "043c8e3799c93282baa0d56e521ce0ffbd8fa8c58d3faf9fe4b24e8f24d96781"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ApplicationsView.xaml.cs",
+    "sha256": "07364a0bcde5a2be17ddeaba08ef938e4a171df39295219fd377ea4ad8119f82"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/AssistantView.xaml.cs",
+    "sha256": "a45ff90ba3bedf4656b00252d93c8aa174b2dbd6033291559b66219a7798982b"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/CharacterWindow.xaml",
+    "sha256": "19108c3922607346b421f347032b8314a257088a3f8eb40dfde42df30c608b4e"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/CharacterWindow.xaml.cs",
+    "sha256": "4c7e28fc6fac076b07eca16f377f7da2ac37bb868bf1b2957958eda9152a9437"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ComputerUseSettingsView.cs",
+    "sha256": "1857c23322795ad731a3608c4c2c00197922a0062e472b8a7949cc0418f637b0"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/DesktopAppWindow.xaml",
+    "sha256": "4c806550680cbdc53bb54e7d88401d7d2987ae189c3ff7a6fcbb4cf6e9fb16d9"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/DesktopAppWindow.xaml.cs",
+    "sha256": "4bc4e8b74de9198973c277dc250ea8f5bdac053af07af56380b5dbe83caa7004"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/DeveloperSettingsView.cs",
+    "sha256": "c0b141d9d82fa9f6c23c6390de03e97a32795badfde66ecded64e02121aa4f5a"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/DeveloperView.cs",
+    "sha256": "42f1f99dc63f3f2909e823a614d85a95fed5e3d4ea940855f9493f63645243cd"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/FileIntelligenceSettingsView.cs",
+    "sha256": "6a844819877e370ab6b26aa2198b28fcf2a1a6aaecf1b3744e9ab98963c07456"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/InteractionPanelWindow.xaml",
+    "sha256": "76fdc4e57ae87b9affb1efb7159f904eed8334dc800093bd03040b3d605292f9"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/InteractionPanelWindow.xaml.cs",
+    "sha256": "177e6489affc74db75f26352d58f43771b0e4eb01b1183e4074fe4c7b7380c0d"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/NotificationBubbleWindow.xaml",
+    "sha256": "f1e853adf8cfe356c4a50562a1379706f525549e56d27469fcfcb0c8b935108d"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/NotificationBubbleWindow.xaml.cs",
+    "sha256": "af656587cb1fa126ef814399a792b883c812e3a350ed92d177d6b489d8e1e572"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/OnboardingWindow.xaml",
+    "sha256": "41f3cacc71299f26601f80fb69b4ba7884ad72c155b5eaf2a558838cd05b9e59"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/OnboardingWindow.xaml.cs",
+    "sha256": "d24e887cf4ac2c60a3ad823246767e3697f391df4e93b8d7c9a8ee53b3fc0c47"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/PermissionsView.xaml",
+    "sha256": "c9fe62c53384f2d77e7bacfa2aa0414031869b35f29f7d4e095cafe562a7a45b"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/PermissionsView.xaml.cs",
+    "sha256": "2c88a79237b9fd2ecec85c5f4de827348022e9e5a8074445038ba70b0528049b"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ProjectFilesView.cs",
+    "sha256": "fad11f41b7470a8dd31ff17f0a5711030559c913adc708a24474b010bd26865a"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ProjectPicker.cs",
+    "sha256": "20f4b4be14a0b967f7fee889ac10f5da7e7032e1af2a8ed32566d52646d902cd"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ProjectSettingsView.cs",
+    "sha256": "d8fe14a0e187dbfbaf4b68da2f8fb058f324a11ab736d91a7d049d6fbf69edb3"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/ProjectsView.cs",
+    "sha256": "26079a367ab2b73c7be210d7af898454c1587c909499de02415566c0a3b30c08"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/PromptWindows.cs",
+    "sha256": "77a7694d1c1a455f90917d3aabd6ce17371048262e497c583bf83fc19f0b3e73"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/SettingsWindow.xaml",
+    "sha256": "c2ce822e9fbb63786a73dae0eaff392b9718aeea77398e3ab64618dd2f4baa0f"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/SettingsWindow.xaml.cs",
+    "sha256": "5ffa28c15558816de3f92668810662c65c4032f75523104e6a5cfcb730b52d22"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/UiInspectorView.cs",
+    "sha256": "407ed60acc14cf7c15160cf97848d5c567c2f32215ccc80f39b199168fc2a293"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/WindowsDiagnosticsView.cs",
+    "sha256": "81c0c6717f854403190bfb175a65e316e9d0d969c0ffd0a0f8b3a66ac4d4e66c"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/WorkspaceEditorWindow.xaml",
+    "sha256": "09cbe882e535ea55eb0002a84b43fa16334bfaa81ab494ea22e46cc4ae00d2b4"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/WorkspaceEditorWindow.xaml.cs",
+    "sha256": "3b853a62675c601046dd1274e831bf64cd48f644e7103248b6017a01336f2150"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/WorkspacesView.xaml",
+    "sha256": "31b8fffc73c0acdb68774c3b4a6906797b066c360d5be1b501463a322f8e49ce"
+  },
+  {
+    "path": "src/DesktopAgent.App/Views/WorkspacesView.xaml.cs",
+    "sha256": "06c8131e45b05060aff06ca11274a44ae65cb5246977a3037760e14c4262044a"
+  },
+  {
+    "path": "src/DesktopAgent.App/Properties/PublishProfiles/WindowsSingleFile.pubxml",
+    "sha256": "7c70e2e5b8b314f233d283d08990c0e89b20abc22df2146d79291d0631d5505a"
+  },
+  {
+    "path": "src/DesktopAgent.App/Assets/Character/attention/README.txt",
+    "sha256": "e1309cd1958b5bf38157503e16b73964f6489d3205276a41f9b6c06cecc9d959"
+  },
+  {
+    "path": "src/DesktopAgent.App/Assets/Character/idle/README.txt",
+    "sha256": "1f127a7d6198a962f0aeff08cbf86a032b32d39195eb09e41eb741b40c5f8220"
+  },
+  {
+    "path": "src/DesktopAgent.App/Assets/Character/sleeping/README.txt",
+    "sha256": "a50025e2666f9fb76b38262818d905826e7d3c4311e1f8f8719c1df4089d9e7d"
+  },
+  {
+    "path": "src/DesktopAgent.App/Assets/Character/thinking/README.txt",
+    "sha256": "634879298c3b9594a833956dbec659d10a137d94f868bf664ef5fac31d968754"
+  },
+  {
+    "path": "src/DesktopAgent.App/Assets/Character/working/README.txt",
+    "sha256": "46e7d21215eadc32934049975aa67b9646aca8ea3cf35e6c395ca44e855b762b"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/DesktopAgent.Tests.csproj",
+    "sha256": "122e4f35386c0fb145f4b61875160c4df953070f00bdba1f850ec85a52fc026e"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Part2Tests.cs",
+    "sha256": "e893ed694271806ad0bba106854fdb0fcc1c14ceb44dfc80888dd86b7232eeb6"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Part3Tests.cs",
+    "sha256": "bab4e120332693053a1f8a19c56c75de912f63c9303ce85dd50a27ed2e22059b"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Part4Tests.cs",
+    "sha256": "da26812d1420660baa86dd8d59e786c80d467dc3ded0b8879b1e79b725be766f"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Part5Tests.cs",
+    "sha256": "447233b64b18ae835cb1bd1e60701061339a7b9051a9638761df726514b52546"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Part62Tests.cs",
+    "sha256": "a458836bd26ad7afaa0ea43956944fc71bf1dba8f74c6fdc41afa549573fa71c"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Part6Tests.cs",
+    "sha256": "2166c20bf33e355ab059119a07326ec8f51524eeb4675b488d3daa112a038637"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Part71Tests.cs",
+    "sha256": "47ef09674d00d9ecb918827f6aad8e4bee8877fc6c6c43d65326e46247b20016"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Part72Diagnostics.cs",
+    "sha256": "9099fd0cdd146b78521812ebefaddb3a733e74a82ce3662ec235d8c5b7605844"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Part7Tests.cs",
+    "sha256": "c449b793b7a400cc25824fbd9dcac5003ea68ca95a0816ae30eea3e69922e499"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/Program.cs",
+    "sha256": "72f63d0817ae0db1ed821293faac1d9c5897666d526753de170a946187ce9384"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/UiLiveDiagnostics.cs",
+    "sha256": "6f3990f72ac2ffb93ba7e92d822a022f82eacac54d5d368415049e8e01e090c9"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/PythonFixtures/crash.py",
+    "sha256": "d4ece5befce06d0c248cad4e7e2416de9a717f0e3bde405b5ede78e78e7e0357"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/PythonFixtures/hang.py",
+    "sha256": "932fbacaaf97e2c56c0e3b27d4054777b4046b4f9d1e68652f6c7cd3bce8a24c"
+  },
+  {
+    "path": "tests/DesktopAgent.Tests/PythonFixtures/wrong_id.py",
+    "sha256": "2423cc175b0fe1a320f9d6d062903f8c21711a61f9d2aabf31bc33582a493859"
+  },
+  {
+    "path": "DesktopAgent.sln",
+    "sha256": "bec60321fc9f20192428523fcec4a58bcdca601d005a41b6ce40a29956f5f6c3"
+  },
+  {
+    "path": "Directory.Build.props",
+    "sha256": "b3387fa92908e35e685201aee51828bd8f6ccfe9daa88bcc68d3b39137b8688c"
+  }
+]

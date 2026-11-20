@@ -1,0 +1,630 @@
+{
+  "CorrelationId": "UI-20261004-184354-7629a4f1",
+  "Timestamp": "2026-10-04T18:43:55.062401+00:00",
+  "Build": "9a7da43c-84c1-41e5-aa9e-c1f3560896c0",
+  "Steps": [
+    {
+      "Operation": "GetForegroundWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 5.1812
+    },
+    {
+      "Operation": "Current Foreground: IsWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.4069
+    },
+    {
+      "Operation": "Current Foreground: IsWindowVisible",
+      "Success": true,
+      "Data": {
+        "Visible": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.2911
+    },
+    {
+      "Operation": "Current Foreground: GetWindowThreadProcessId",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ThreadId": 2460
+      },
+      "Failure": null,
+      "DurationMilliseconds": 2.0243
+    },
+    {
+      "Operation": "Current Foreground: Process.GetProcessById / Name",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ProcessName": "brave"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 6.3803
+    },
+    {
+      "Operation": "Current Foreground: Executable",
+      "Success": true,
+      "Data": {
+        "Executable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 22.1426
+    },
+    {
+      "Operation": "Current Foreground: GetWindowTextLength",
+      "Success": true,
+      "Data": {
+        "Length": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.6403
+    },
+    {
+      "Operation": "Current Foreground: GetWindowText",
+      "Success": true,
+      "Data": {
+        "Title": "India\u0027s Got Latent (2026) Season 2 Episode 11 (Netflix) Download full Movie \u0026 Watch Online on hindilinks4u - hindilinks4u -Watch Free Movies \u0026 TV Shows-Hindilinks4u - Brave",
+        "CharactersCopied": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 14.431
+    },
+    {
+      "Operation": "Current Foreground: GetWindowRect",
+      "Success": true,
+      "Data": {
+        "X": -7,
+        "Y": -7,
+        "Width": 1550,
+        "Height": 830
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.3891
+    },
+    {
+      "Operation": "Self-window detection",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "IsOurProcess": false
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.4173
+    },
+    {
+      "Operation": "Foreground tracking refresh",
+      "Success": true,
+      "Data": {
+        "CurrentForegroundWindow": {
+          "Handle": 133286,
+          "ProcessId": 6560,
+          "ProcessStartTicks": 639267336786309253
+        },
+        "LastExternalForegroundWindow": {
+          "Handle": 133286,
+          "ProcessId": 6560,
+          "ProcessStartTicks": 639267336786309253
+        }
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.9353
+    },
+    {
+      "Operation": "Last External identity validation",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.3206
+    },
+    {
+      "Operation": "Last External: IsWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0012
+    },
+    {
+      "Operation": "Last External: IsWindowVisible",
+      "Success": true,
+      "Data": {
+        "Visible": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0008
+    },
+    {
+      "Operation": "Last External: GetWindowThreadProcessId",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ThreadId": 2460
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0012
+    },
+    {
+      "Operation": "Last External: Process.GetProcessById / Name",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ProcessName": "brave"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.1826
+    },
+    {
+      "Operation": "Last External: Executable",
+      "Success": true,
+      "Data": {
+        "Executable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 1.1301
+    },
+    {
+      "Operation": "Last External: GetWindowTextLength",
+      "Success": true,
+      "Data": {
+        "Length": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0034
+    },
+    {
+      "Operation": "Last External: GetWindowText",
+      "Success": true,
+      "Data": {
+        "Title": "India\u0027s Got Latent (2026) Season 2 Episode 11 (Netflix) Download full Movie \u0026 Watch Online on hindilinks4u - hindilinks4u -Watch Free Movies \u0026 TV Shows-Hindilinks4u - Brave",
+        "CharactersCopied": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.8056
+    },
+    {
+      "Operation": "Last External: GetWindowRect",
+      "Success": true,
+      "Data": {
+        "X": -7,
+        "Y": -7,
+        "Width": 1550,
+        "Height": 830
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0059
+    },
+    {
+      "Operation": "Direct application enumeration",
+      "Success": true,
+      "Data": {
+        "HWND": "0x608EC",
+        "ApplicationName": "Notepad",
+        "ProcessName": "Notepad",
+        "HostedProcessId": null,
+        "HostedProcessName": null,
+        "Reason": "DirectEnumeration (not foreground tracking)"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 19.3999
+    },
+    {
+      "Operation": "Target Win32: IsWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x608EC",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.003
+    },
+    {
+      "Operation": "Target Win32: IsWindowVisible",
+      "Success": true,
+      "Data": {
+        "Visible": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0005
+    },
+    {
+      "Operation": "Target Win32: GetWindowThreadProcessId",
+      "Success": true,
+      "Data": {
+        "PID": 22076,
+        "ThreadId": 11168
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0008
+    },
+    {
+      "Operation": "Target Win32: Process.GetProcessById / Name",
+      "Success": true,
+      "Data": {
+        "PID": 22076,
+        "ProcessName": "Notepad"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.1711
+    },
+    {
+      "Operation": "Target Win32: Executable",
+      "Success": true,
+      "Data": {
+        "Executable": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2607.14.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 1.2832
+    },
+    {
+      "Operation": "Target Win32: GetWindowTextLength",
+      "Success": true,
+      "Data": {
+        "Length": 18,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0031
+    },
+    {
+      "Operation": "Target Win32: GetWindowText",
+      "Success": true,
+      "Data": {
+        "Title": "Untitled - Notepad",
+        "CharactersCopied": 18,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.9959
+    },
+    {
+      "Operation": "Target Win32: GetWindowRect",
+      "Success": true,
+      "Data": {
+        "X": 232,
+        "Y": 199,
+        "Width": 1152,
+        "Height": 592
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0064
+    },
+    {
+      "Operation": "UIA HWND validation",
+      "Success": true,
+      "Data": {
+        "HWND": "0x608EC",
+        "ProcessId": 22076,
+        "Apartment": "MTA",
+        "ThreadId": 5
+      },
+      "Failure": null,
+      "DurationMilliseconds": 3.8564
+    },
+    {
+      "Operation": "UIA Root / AutomationElement.FromHandle",
+      "Success": true,
+      "Data": {
+        "RootAvailable": true,
+        "Apartment": "MTA"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 118.374
+    },
+    {
+      "Operation": "UIA Root properties",
+      "Success": true,
+      "Data": {
+        "Name": "[TEXT OMITTED]",
+        "ControlType": "ControlType.Window",
+        "AutomationId": null,
+        "ClassName": "Notepad"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 2.1428
+    },
+    {
+      "Operation": "Immediate Children",
+      "Success": true,
+      "Data": {
+        "Count": 5,
+        "Truncated": false,
+        "Children": [
+          {
+            "Name": "[TEXT OMITTED]",
+            "ControlType": "ControlType.Pane",
+            "AutomationId": null,
+            "ClassName": "NotepadTextBox"
+          },
+          {
+            "Name": "[TEXT OMITTED]",
+            "ControlType": "ControlType.Pane",
+            "AutomationId": null,
+            "ClassName": "Microsoft.UI.Content.DesktopChildSiteBridge"
+          },
+          {
+            "Name": "[TEXT OMITTED]",
+            "ControlType": "ControlType.Pane",
+            "AutomationId": null,
+            "ClassName": "Microsoft.UI.Content.DesktopChildSiteBridge"
+          },
+          {
+            "Name": "[TEXT OMITTED]",
+            "ControlType": "ControlType.Pane",
+            "AutomationId": null,
+            "ClassName": "Microsoft.UI.Content.DesktopChildSiteBridge"
+          },
+          {
+            "Name": "[TEXT OMITTED]",
+            "ControlType": "ControlType.TitleBar",
+            "AutomationId": "TitleBar",
+            "ClassName": null
+          }
+        ]
+      },
+      "Failure": null,
+      "DurationMilliseconds": 19.2585
+    },
+    {
+      "Operation": "Bounded tree / Interactive Elements",
+      "Success": true,
+      "Data": {
+        "Depth": 3,
+        "MaximumElements": 100,
+        "Count": 16,
+        "Truncated": true,
+        "Status": "Success",
+        "Controls": [
+          {
+            "Id": "ui:10",
+            "ControlType": "Button",
+            "Name": "Headings",
+            "AutomationId": null,
+            "ClassName": "Microsoft.UI.Xaml.Controls.DropDownButton",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": true,
+            "CanToggle": null,
+            "CanExpandCollapse": true,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:11",
+            "ControlType": "Button",
+            "Name": "Lists",
+            "AutomationId": null,
+            "ClassName": "Microsoft.UI.Xaml.Controls.DropDownButton",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": true,
+            "CanToggle": null,
+            "CanExpandCollapse": true,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:12",
+            "ControlType": "Button",
+            "Name": "Bold (Ctrl\u002BB)",
+            "AutomationId": null,
+            "ClassName": "ToggleButton",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": null,
+            "CanToggle": true,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:13",
+            "ControlType": "Button",
+            "Name": "Italic (Ctrl\u002BI)",
+            "AutomationId": null,
+            "ClassName": "ToggleButton",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": null,
+            "CanToggle": true,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:14",
+            "ControlType": "Button",
+            "Name": "Strikethrough (Ctrl\u002BShift\u002BX)",
+            "AutomationId": null,
+            "ClassName": "ToggleButton",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": null,
+            "CanToggle": true,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:15",
+            "ControlType": "Button",
+            "Name": "Link (Ctrl\u002BK)",
+            "AutomationId": null,
+            "ClassName": "ToggleButton",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": null,
+            "CanToggle": true,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:16",
+            "ControlType": "Button",
+            "Name": "Table",
+            "AutomationId": null,
+            "ClassName": "Microsoft.UI.Xaml.Controls.DropDownButton",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": true,
+            "CanToggle": null,
+            "CanExpandCollapse": true,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:17",
+            "ControlType": "Button",
+            "Name": "Clear formatting (Ctrl\u002BSpace)",
+            "AutomationId": null,
+            "ClassName": "ToggleButton",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": null,
+            "CanToggle": true,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:18",
+            "ControlType": "Button",
+            "Name": "Writing tools",
+            "AutomationId": "RewriteDropDownButton",
+            "ClassName": "Microsoft.UI.Xaml.Controls.DropDownButton",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": true,
+            "CanToggle": null,
+            "CanExpandCollapse": true,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:19",
+            "ControlType": "Button",
+            "Name": "What\u0027s new",
+            "AutomationId": "FREButton",
+            "ClassName": "Button",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": true,
+            "CanToggle": null,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:20",
+            "ControlType": "Button",
+            "Name": "User avatar",
+            "AutomationId": "AvatarButton",
+            "ClassName": "Button",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": true,
+            "CanToggle": null,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          },
+          {
+            "Id": "ui:21",
+            "ControlType": "Button",
+            "Name": "Settings",
+            "AutomationId": "SettingsButton",
+            "ClassName": "Button",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": true,
+            "CanToggle": null,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:8"
+          }
+        ]
+      },
+      "Failure": null,
+      "DurationMilliseconds": 246.7381
+    }
+  ]
+}

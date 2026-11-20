@@ -1,0 +1,8 @@
+<Window x:Class="DesktopAgent.App.Views.ApplicationPickerWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Add Application" Width="560" Height="620" WindowStartupLocation="CenterOwner" AutomationProperties.Name="Installed application picker">
+    <Grid Margin="22"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+        <StackPanel><TextBlock Text="Add Application" FontSize="24" FontWeight="SemiBold"/><TextBlock Text="Choose an application discovered on this PC." Foreground="{DynamicResource MutedBrush}" Margin="0,5,0,0"/></StackPanel>
+        <TextBox x:Name="SearchInput" Grid.Row="1" Margin="0,16,0,12" TextChanged="SearchInput_TextChanged" AutomationProperties.Name="Search installed applications" />
+        <ListBox x:Name="ApplicationsList" Grid.Row="2" MouseDoubleClick="ApplicationsList_DoubleClick"><ListBox.ItemTemplate><DataTemplate><Grid Margin="5"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions><StackPanel><TextBlock Text="{Binding DisplayName}" FontWeight="SemiBold"/><TextBlock Text="{Binding ApplicationType}" Foreground="{DynamicResource MutedBrush}" FontSize="12"/></StackPanel><TextBlock Grid.Column="1" Text="Installed" Foreground="#32805B" VerticalAlignment="Center"/></Grid></DataTemplate></ListBox.ItemTemplate></ListBox>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,14,0,0"><Button Content="Cancel" Background="#E8EAF1" Foreground="#333A4A" Click="Cancel_Click"/><Button Content="Add application" Click="Add_Click"/></StackPanel>
+    </Grid>
+</Window>

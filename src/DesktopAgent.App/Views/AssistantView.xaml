@@ -1,0 +1,60 @@
+<UserControl x:Class="DesktopAgent.App.Views.AssistantView"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" AutomationProperties.Name="Assistant screen">
+ <Grid>
+  <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+  <Grid x:Name="Header">
+   <TextBlock Text="Assistant" FontSize="30" FontWeight="SemiBold"/>
+   <Button x:Name="NewButton" Content="New conversation" HorizontalAlignment="Right" Click="New_Click"/>
+  </Grid>
+  <StackPanel Grid.Row="1" Margin="0,8,0,12">
+   <TextBlock x:Name="ConnectionStatus" Text="Direct commands are available." Foreground="{DynamicResource MutedBrush}" TextWrapping="Wrap" FontSize="12"/>
+   <DockPanel><Button x:Name="ClearProjectButton" Content="Clear project" Click="ClearProject_Click" DockPanel.Dock="Right" FontSize="11" Padding="5,2"/><TextBlock x:Name="CurrentProjectLabel" VerticalAlignment="Center" FontSize="12" TextWrapping="Wrap"/></DockPanel>
+   <Button x:Name="DeveloperCard" Content="View developer sessions" Click="Developer_Click" HorizontalAlignment="Left" FontSize="12" Visibility="Collapsed"/>
+   <TextBlock x:Name="UiObservationLabel" Text="" FontSize="12" TextWrapping="Wrap" Visibility="Collapsed"/>
+  </StackPanel>
+  <Border Grid.Row="2" Background="{DynamicResource CardBrush}" CornerRadius="14" BorderBrush="#25667085" BorderThickness="1" Padding="12">
+   <Grid>
+    <StackPanel x:Name="EmptyState" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="12">
+     <TextBlock Text="Ask me anything…" FontSize="20" FontWeight="SemiBold" TextAlignment="Center"/>
+     <TextBlock Text="Open an app, prepare a workspace, or ask a question.&#10;Try: Can you open Chrome?" Foreground="{DynamicResource MutedBrush}" TextWrapping="Wrap" TextAlignment="Center" Margin="0,10,0,0"/>
+    </StackPanel>
+    <ScrollViewer x:Name="MessageScroll" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+     <ItemsControl x:Name="Messages">
+      <ItemsControl.ItemTemplate><DataTemplate>
+       <Border Background="{DynamicResource SurfaceBrush}" BorderBrush="#25667085" BorderThickness="1" HorizontalAlignment="{Binding Alignment}" CornerRadius="12" Padding="12" Margin="0,0,0,10" MaxWidth="640">
+        <StackPanel>
+         <TextBlock Text="{Binding Speaker}" FontSize="11" FontWeight="SemiBold" Foreground="{DynamicResource MutedBrush}"/>
+         <TextBlock Text="{Binding Text}" TextWrapping="Wrap" Margin="0,5,0,0"/>
+         <ItemsControl ItemsSource="{Binding Choices}" Margin="0,6,0,0">
+          <ItemsControl.ItemTemplate><DataTemplate><Button Content="{Binding Name}" Click="Choice_Click" HorizontalAlignment="Left" Margin="0,3,0,0"/></DataTemplate></ItemsControl.ItemTemplate>
+         </ItemsControl>
+         <ItemsControl ItemsSource="{Binding Sources}" Margin="0,6,0,0">
+          <ItemsControl.ItemTemplate><DataTemplate>
+           <Border BorderBrush="#35667085" BorderThickness="1" CornerRadius="7" Padding="7" Margin="0,3,0,0">
+            <DockPanel><Button Content="Open ↗" Click="Source_Click" DockPanel.Dock="Right" Padding="6,3"/>
+             <StackPanel><TextBlock Text="{Binding RelativePath}" TextWrapping="Wrap" FontSize="12"/>
+              <TextBlock FontSize="11"><Run Text="Lines "/><Run Text="{Binding StartLine, Mode=OneWay}"/><Run Text="–"/><Run Text="{Binding EndLine, Mode=OneWay}"/></TextBlock>
+             </StackPanel>
+            </DockPanel>
+           </Border>
+          </DataTemplate></ItemsControl.ItemTemplate>
+         </ItemsControl>
+        </StackPanel>
+       </Border>
+      </DataTemplate></ItemsControl.ItemTemplate>
+     </ItemsControl>
+    </ScrollViewer>
+   </Grid>
+  </Border>
+  <TextBlock x:Name="WorkStatus" Grid.Row="3" Foreground="{DynamicResource MutedBrush}" Margin="0,7,0,7" FontSize="12" TextWrapping="Wrap"/>
+  <Grid Grid.Row="4">
+   <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+   <TextBox x:Name="InputBox" MinHeight="46" MaxHeight="100" Padding="10" AcceptsReturn="True" TextWrapping="Wrap" PreviewKeyDown="Input_KeyDown" MaxLength="4000" AutomationProperties.Name="Assistant request" ToolTip="Enter to send. Shift+Enter for a new line."/>
+   <StackPanel Grid.Column="1" Margin="8,0,0,0">
+    <StackPanel Orientation="Horizontal"><Button x:Name="StopButton" Content="Stop" Click="Stop_Click" IsEnabled="False" Margin="0,0,6,0"/><Button x:Name="SendButton" Content="Send" Click="Send_Click"/></StackPanel>
+    <Button x:Name="FullButton" Content="Full Assistant ↗" Click="Full_Click" Visibility="Collapsed" Margin="0,5,0,0" Padding="6,3"/>
+   </StackPanel>
+  </Grid>
+ </Grid>
+</UserControl>

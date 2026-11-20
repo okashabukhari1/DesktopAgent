@@ -1,0 +1,1 @@
+Sleeping-state assets.

@@ -1,0 +1,19 @@
+<Window x:Class="DesktopAgent.App.Views.InteractionPanelWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Width="510" Height="500" WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+ ShowInTaskbar="False" ResizeMode="NoResize" AutomationProperties.Name="Desktop Agent interaction panel">
+ <Window.Resources>
+  <Storyboard x:Key="OpenAnimation"><DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.18"/></Storyboard>
+ </Window.Resources>
+ <Border Background="{DynamicResource SurfaceBrush}" BorderBrush="#25667085" BorderThickness="1" CornerRadius="18" Padding="18" Effect="{DynamicResource PanelShadow}">
+  <Grid>
+   <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition/></Grid.RowDefinitions>
+   <Grid Margin="0,0,0,8">
+    <TextBlock Text="Your desktop companion" FontSize="18" FontWeight="SemiBold" VerticalAlignment="Center"/>
+    <Button Content="×" HorizontalAlignment="Right" Width="32" Padding="0" Height="32" Click="Close_Click" ToolTip="Close (Esc)"/>
+   </Grid>
+   <ContentControl x:Name="AssistantHost" Grid.Row="1"/>
+  </Grid>
+ </Border>
+</Window>

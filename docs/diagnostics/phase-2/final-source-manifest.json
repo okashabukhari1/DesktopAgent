@@ -1,0 +1,58 @@
+[
+  {
+    "path": "src/DesktopAgent.Desktop/App.cs",
+    "sha256": "acec9682222b9c0c8577d441bec7d917a6859ea0137ec50561f32ce632344524"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/DesktopAgent.Desktop.csproj",
+    "sha256": "9ffcc097b7cdc0dd8f77d2d240fbaa80221f462d4fcb6aee72df03960946d228"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/DesktopHost.cs",
+    "sha256": "53a42c64efdb862e884c0e7ab34eced141bb4ecab3eebe450d999e5bcfe1895b"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/MainWindow.cs",
+    "sha256": "4bf26c0066bf787fcd88ab9ab0af5aeefcca127f2dd5f0f7a6338d8b3116457d"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/packages.lock.json",
+    "sha256": "f3f19de4dbbb8bbb4f0ef39bb7dae2c4fd176a59742a616a19744a3dbfbe06bc"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/Program.cs",
+    "sha256": "8b67eab158c089219f256d6ff499184c71a0776f436c1f7a3f36a34a4934d358"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/QualificationLog.cs",
+    "sha256": "6b7a1bb05d9d2fbcec94985403ee8c511ce53c6b999f037ab33cabca27439d54"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/QualificationWindow.cs",
+    "sha256": "089de3235dd58cd93e63bc0ff85239d597cab6aa7a1ea46565f8fc1bb3d8a88e"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/Services/StartupFailure.cs",
+    "sha256": "8d66be44d0644ec2a2cdd1e0a4851a6e167060c575f0c89e51b4e85e419badd7"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/Services/UnavailableCredentialStore.cs",
+    "sha256": "6664faed5fde640e725d982146cf7b079a88ea3a62b3aac267c1395feea96974"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/ViewModels/ShellViewModel.cs",
+    "sha256": "9b5b9c6cc4eb354859cb8e942fa8f0c001f9aa581f7830ec0be40a2fc4ec79f4"
+  },
+  {
+    "path": "src/DesktopAgent.Desktop/Views/CompanionMark.cs",
+    "sha256": "b2e7551409e925976379d5de851404ae032d57246a33cae29a68e75a6ab88ffb"
+  },
+  {
+    "path": "tests/DesktopAgent.Desktop.Tests/DesktopAgent.Desktop.Tests.csproj",
+    "sha256": "34e388d146bc06f51975bf34b50b779eeb5e820ba1bbd8d8c69b7cf22348b738"
+  },
+  {
+    "path": "tests/DesktopAgent.Desktop.Tests/Program.cs",
+    "sha256": "84aad3cdbcd306f3ca8e0190758c62b88309845734a2a6a45123a241fc65cbc6"
+  }
+]

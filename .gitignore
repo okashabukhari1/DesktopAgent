@@ -1,0 +1,13 @@
+bin/
+obj/
+.dotnet-home/
+.smoke-localappdata/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.log
+*.tmp
+TestResults/
+.verification-build/

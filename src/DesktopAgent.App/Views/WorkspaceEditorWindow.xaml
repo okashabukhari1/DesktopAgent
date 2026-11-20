@@ -1,0 +1,92 @@
+<Window x:Class="DesktopAgent.App.Views.WorkspaceEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Workspace editor" Width="900" Height="680" MinWidth="760" MinHeight="580"
+        WindowStartupLocation="CenterOwner" AutomationProperties.Name="Workspace editor">
+    <Grid Margin="26">
+        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock x:Name="EditorTitle" Text="New workspace" FontSize="28" FontWeight="SemiBold" />
+            <TextBlock Text="Choose what opens, in which order, and how application windows are arranged." Foreground="{DynamicResource MutedBrush}" Margin="0,5,0,0" />
+        </StackPanel>
+
+        <TabControl Grid.Row="1" Margin="0,22,0,16">
+            <TabItem Header="General">
+                <ScrollViewer VerticalScrollBarVisibility="Auto"><Grid Margin="18">
+                    <Grid.ColumnDefinitions><ColumnDefinition Width="130"/><ColumnDefinition/></Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Name" VerticalAlignment="Center"/><TextBox x:Name="NameInput" Grid.Column="1" Margin="0,5" MaxLength="80" AutomationProperties.Name="Workspace name" />
+                    <TextBlock Grid.Row="1" Text="Description" VerticalAlignment="Top" Margin="0,12,0,0"/><TextBox x:Name="DescriptionInput" Grid.Row="1" Grid.Column="1" Margin="0,5" Height="82" MaxLength="300" AcceptsReturn="True" TextWrapping="Wrap" />
+                    <TextBlock Grid.Row="2" Text="Icon" VerticalAlignment="Center"/><ComboBox x:Name="IconInput" Grid.Row="2" Grid.Column="1" Margin="0,5" />
+                    <TextBlock Grid.Row="3" Text="Final focus" VerticalAlignment="Center"/><TextBox x:Name="FinalFocusInput" Grid.Row="3" Grid.Column="1" Margin="0,5" ToolTip="Application alias or window name to focus when launch finishes" />
+                    <TextBlock Grid.Row="4" Text="Timeout" VerticalAlignment="Center"/><StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal"><TextBox x:Name="TimeoutInput" Width="90" Margin="0,5"/><TextBlock Text="seconds" VerticalAlignment="Center" Margin="8,0" Foreground="{DynamicResource MutedBrush}"/></StackPanel>
+                    <CheckBox x:Name="ContinueInput" Grid.Row="5" Grid.Column="1" Content="Continue when an item fails" />
+                    <CheckBox x:Name="ProgressInput" Grid.Row="6" Grid.Column="1" Content="Show detailed launch progress" />
+                    <Border Grid.Row="7" Grid.ColumnSpan="2" Margin="0,18,0,0" Padding="14" CornerRadius="10" Background="#12665CF6">
+                        <TextBlock Text="Workspace definitions stay local. Deleting a workspace never removes applications, folders, files, or browser data." TextWrapping="Wrap" Foreground="{DynamicResource MutedBrush}" />
+                    </Border>
+                </Grid></ScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Project">
+                <StackPanel Margin="18">
+                    <TextBlock Text="Associated project" FontSize="20" FontWeight="SemiBold"/>
+                    <TextBlock x:Name="ProjectName" Margin="0,12,0,12" TextWrapping="Wrap"/>
+                    <WrapPanel><Button Content="Choose Project" Click="ChooseProject_Click"/><Button Content="Clear" Click="ClearProject_Click"/></WrapPanel>
+                    <TextBlock Text="Projects keep development metadata separate from workspace applications and layouts. No project variables or terminal commands are executed." TextWrapping="Wrap" Margin="0,14,0,0"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Applications">
+                <Grid Margin="14">
+                    <Grid.RowDefinitions><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                    <DataGrid x:Name="ApplicationsGrid" AutoGenerateColumns="False" CanUserAddRows="False" HeadersVisibility="Column" SelectionMode="Single">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Name" Binding="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}" Width="130" />
+                            <DataGridTextColumn Header="Application / executable" Binding="{Binding ApplicationIdentifier, UpdateSourceTrigger=PropertyChanged}" Width="*" />
+                            <DataGridCheckBoxColumn Header="Launch" Binding="{Binding Launch}" Width="62" />
+                            <DataGridCheckBoxColumn Header="Focus" Binding="{Binding FocusIfRunning}" Width="58" />
+                            <DataGridTextColumn Header="Order" Binding="{Binding LaunchOrder}" Width="58" />
+                            <DataGridTextColumn Header="Delay ms" Binding="{Binding DelayAfterLaunchMs}" Width="72" />
+                            <DataGridTextColumn Header="Monitor" Binding="{Binding TargetMonitor}" Width="68" />
+                            <DataGridComboBoxColumn x:Name="LayoutColumn" Header="Layout" SelectedItemBinding="{Binding Layout}" Width="110" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,0">
+                        <Button Content="Choose application" Click="ChooseApplication_Click" />
+                        <Button Content="Browse executable" Background="#E8EAF1" Foreground="#333A4A" Click="BrowseApplication_Click" />
+                        <Button Content="Remove" Background="#E8EAF1" Foreground="#333A4A" Click="RemoveApplication_Click" />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Resources">
+                <Grid Margin="14">
+                    <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="14"/><ColumnDefinition/></Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions><RowDefinition/><RowDefinition Height="14"/><RowDefinition/></Grid.RowDefinitions>
+                    <GroupBox Header="Folders"><DockPanel Margin="8"><StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal"><Button Content="Add folder" Click="AddFolder_Click"/><Button Content="Remove" Background="#E8EAF1" Foreground="#333A4A" Click="RemoveFolder_Click"/></StackPanel><ListBox x:Name="FoldersList" DisplayMemberPath="Value"/></DockPanel></GroupBox>
+                    <GroupBox Header="Files" Grid.Column="2"><DockPanel Margin="8"><StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal"><Button Content="Add file" Click="AddFile_Click"/><Button Content="Remove" Background="#E8EAF1" Foreground="#333A4A" Click="RemoveFile_Click"/></StackPanel><ListBox x:Name="FilesList" DisplayMemberPath="Value"/></DockPanel></GroupBox>
+                    <GroupBox Header="Web pages" Grid.Row="2" Grid.ColumnSpan="3"><DockPanel Margin="8"><StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal"><Button Content="Add web page" Click="AddUrl_Click"/><Button Content="Remove" Background="#E8EAF1" Foreground="#333A4A" Click="RemoveUrl_Click"/></StackPanel><ListBox x:Name="UrlsList" DisplayMemberPath="Value"/></DockPanel></GroupBox>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Safe actions">
+                <Grid Margin="14">
+                    <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="14"/><ColumnDefinition/></Grid.ColumnDefinitions>
+                    <GroupBox Header="Before launch"><DockPanel Margin="8"><StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal"><Button Content="Add action" Click="AddPreAction_Click"/><Button Content="Remove" Background="#E8EAF1" Foreground="#333A4A" Click="RemovePreAction_Click"/></StackPanel><DataGrid x:Name="PreActionsGrid" AutoGenerateColumns="False" CanUserAddRows="False"><DataGrid.Columns><DataGridComboBoxColumn x:Name="PreActionTypeColumn" Header="Action" SelectedItemBinding="{Binding Type}" Width="100"/><DataGridTextColumn Header="Application / window" Binding="{Binding Target, UpdateSourceTrigger=PropertyChanged}" Width="*"/><DataGridTextColumn Header="Order" Binding="{Binding Order}" Width="58"/></DataGrid.Columns></DataGrid></DockPanel></GroupBox>
+                    <GroupBox Header="After launch" Grid.Column="2"><DockPanel Margin="8"><StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal"><Button Content="Add action" Click="AddPostAction_Click"/><Button Content="Remove" Background="#E8EAF1" Foreground="#333A4A" Click="RemovePostAction_Click"/></StackPanel><DataGrid x:Name="PostActionsGrid" AutoGenerateColumns="False" CanUserAddRows="False"><DataGrid.Columns><DataGridComboBoxColumn x:Name="PostActionTypeColumn" Header="Action" SelectedItemBinding="{Binding Type}" Width="100"/><DataGridTextColumn Header="Application / window" Binding="{Binding Target, UpdateSourceTrigger=PropertyChanged}" Width="*"/><DataGridTextColumn Header="Order" Binding="{Binding Order}" Width="58"/></DataGrid.Columns></DataGrid></DockPanel></GroupBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <Grid Grid.Row="2">
+            <TextBlock x:Name="ValidationText" Foreground="#C73B4D" TextWrapping="Wrap" VerticalAlignment="Center" Margin="4,0,250,0" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Cancel" Background="#E8EAF1" Foreground="#333A4A" Click="Cancel_Click" />
+                <Button x:Name="SaveButton" Content="Save workspace" Click="Save_Click" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

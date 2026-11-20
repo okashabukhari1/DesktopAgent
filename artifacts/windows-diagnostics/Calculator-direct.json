@@ -1,0 +1,453 @@
+{
+  "CorrelationId": "UI-20261004-184353-d9ec797a",
+  "Timestamp": "2026-10-04T18:43:54.1829283+00:00",
+  "Build": "9a7da43c-84c1-41e5-aa9e-c1f3560896c0",
+  "Steps": [
+    {
+      "Operation": "GetForegroundWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 5.2272
+    },
+    {
+      "Operation": "Current Foreground: IsWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.3669
+    },
+    {
+      "Operation": "Current Foreground: IsWindowVisible",
+      "Success": true,
+      "Data": {
+        "Visible": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.2796
+    },
+    {
+      "Operation": "Current Foreground: GetWindowThreadProcessId",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ThreadId": 2460
+      },
+      "Failure": null,
+      "DurationMilliseconds": 1.9633
+    },
+    {
+      "Operation": "Current Foreground: Process.GetProcessById / Name",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ProcessName": "brave"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 7.691
+    },
+    {
+      "Operation": "Current Foreground: Executable",
+      "Success": true,
+      "Data": {
+        "Executable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 22.1874
+    },
+    {
+      "Operation": "Current Foreground: GetWindowTextLength",
+      "Success": true,
+      "Data": {
+        "Length": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.693
+    },
+    {
+      "Operation": "Current Foreground: GetWindowText",
+      "Success": true,
+      "Data": {
+        "Title": "India\u0027s Got Latent (2026) Season 2 Episode 11 (Netflix) Download full Movie \u0026 Watch Online on hindilinks4u - hindilinks4u -Watch Free Movies \u0026 TV Shows-Hindilinks4u - Brave",
+        "CharactersCopied": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 14.3922
+    },
+    {
+      "Operation": "Current Foreground: GetWindowRect",
+      "Success": true,
+      "Data": {
+        "X": -7,
+        "Y": -7,
+        "Width": 1550,
+        "Height": 830
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.3792
+    },
+    {
+      "Operation": "Self-window detection",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "IsOurProcess": false
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.4069
+    },
+    {
+      "Operation": "Foreground tracking refresh",
+      "Success": true,
+      "Data": {
+        "CurrentForegroundWindow": {
+          "Handle": 133286,
+          "ProcessId": 6560,
+          "ProcessStartTicks": 639267336786309253
+        },
+        "LastExternalForegroundWindow": {
+          "Handle": 133286,
+          "ProcessId": 6560,
+          "ProcessStartTicks": 639267336786309253
+        }
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.9798
+    },
+    {
+      "Operation": "Last External identity validation",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.3162
+    },
+    {
+      "Operation": "Last External: IsWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x208A6",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0012
+    },
+    {
+      "Operation": "Last External: IsWindowVisible",
+      "Success": true,
+      "Data": {
+        "Visible": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0005
+    },
+    {
+      "Operation": "Last External: GetWindowThreadProcessId",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ThreadId": 2460
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0006
+    },
+    {
+      "Operation": "Last External: Process.GetProcessById / Name",
+      "Success": true,
+      "Data": {
+        "PID": 6560,
+        "ProcessName": "brave"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.1796
+    },
+    {
+      "Operation": "Last External: Executable",
+      "Success": true,
+      "Data": {
+        "Executable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 1.1243
+    },
+    {
+      "Operation": "Last External: GetWindowTextLength",
+      "Success": true,
+      "Data": {
+        "Length": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.003
+    },
+    {
+      "Operation": "Last External: GetWindowText",
+      "Success": true,
+      "Data": {
+        "Title": "India\u0027s Got Latent (2026) Season 2 Episode 11 (Netflix) Download full Movie \u0026 Watch Online on hindilinks4u - hindilinks4u -Watch Free Movies \u0026 TV Shows-Hindilinks4u - Brave",
+        "CharactersCopied": 172,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.7841
+    },
+    {
+      "Operation": "Last External: GetWindowRect",
+      "Success": true,
+      "Data": {
+        "X": -7,
+        "Y": -7,
+        "Width": 1550,
+        "Height": 830
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0058
+    },
+    {
+      "Operation": "Direct application enumeration",
+      "Success": true,
+      "Data": {
+        "HWND": "0x200996",
+        "ApplicationName": "Calculator",
+        "ProcessName": "ApplicationFrameHost",
+        "HostedProcessId": 7788,
+        "HostedProcessName": "CalculatorApp",
+        "Reason": "DirectEnumeration (not foreground tracking)"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 18.9584
+    },
+    {
+      "Operation": "Target Win32: IsWindow",
+      "Success": true,
+      "Data": {
+        "HWND": "0x200996",
+        "Valid": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.003
+    },
+    {
+      "Operation": "Target Win32: IsWindowVisible",
+      "Success": true,
+      "Data": {
+        "Visible": true
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0007
+    },
+    {
+      "Operation": "Target Win32: GetWindowThreadProcessId",
+      "Success": true,
+      "Data": {
+        "PID": 11960,
+        "ThreadId": 20636
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0007
+    },
+    {
+      "Operation": "Target Win32: Process.GetProcessById / Name",
+      "Success": true,
+      "Data": {
+        "PID": 11960,
+        "ProcessName": "ApplicationFrameHost"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.1201
+    },
+    {
+      "Operation": "Target Win32: Executable",
+      "Success": true,
+      "Data": {
+        "Executable": "C:\\WINDOWS\\system32\\ApplicationFrameHost.exe"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.8235
+    },
+    {
+      "Operation": "Target Win32: GetWindowTextLength",
+      "Success": true,
+      "Data": {
+        "Length": 10,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.0027
+    },
+    {
+      "Operation": "Target Win32: GetWindowText",
+      "Success": true,
+      "Data": {
+        "Title": "Calculator",
+        "CharactersCopied": 10,
+        "Win32Error": 0
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.9317
+    },
+    {
+      "Operation": "Target Win32: GetWindowRect",
+      "Success": true,
+      "Data": {
+        "X": 149,
+        "Y": 106,
+        "Width": 389,
+        "Height": 572
+      },
+      "Failure": null,
+      "DurationMilliseconds": 0.012
+    },
+    {
+      "Operation": "UIA HWND validation",
+      "Success": true,
+      "Data": {
+        "HWND": "0x200996",
+        "ProcessId": 11960,
+        "Apartment": "MTA",
+        "ThreadId": 5
+      },
+      "Failure": null,
+      "DurationMilliseconds": 4.6043
+    },
+    {
+      "Operation": "UIA Root / AutomationElement.FromHandle",
+      "Success": true,
+      "Data": {
+        "RootAvailable": true,
+        "Apartment": "MTA"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 130.9832
+    },
+    {
+      "Operation": "UIA Root properties",
+      "Success": true,
+      "Data": {
+        "Name": "[TEXT OMITTED]",
+        "ControlType": "ControlType.Window",
+        "AutomationId": null,
+        "ClassName": "ApplicationFrameWindow"
+      },
+      "Failure": null,
+      "DurationMilliseconds": 2.3698
+    },
+    {
+      "Operation": "Immediate Children",
+      "Success": true,
+      "Data": {
+        "Count": 4,
+        "Truncated": false,
+        "Children": [
+          {
+            "Name": "[TEXT OMITTED]",
+            "ControlType": "ControlType.Window",
+            "AutomationId": "TitleBar",
+            "ClassName": "ApplicationFrameTitleBarWindow"
+          },
+          {
+            "Name": "[TEXT OMITTED]",
+            "ControlType": "ControlType.Window",
+            "AutomationId": null,
+            "ClassName": "Windows.UI.Core.CoreWindow"
+          },
+          {
+            "Name": "[TEXT OMITTED]",
+            "ControlType": "ControlType.Pane",
+            "AutomationId": null,
+            "ClassName": "ApplicationFrameInputSinkWindow"
+          },
+          {
+            "Name": "[TEXT OMITTED]",
+            "ControlType": "ControlType.TitleBar",
+            "AutomationId": "TitleBar",
+            "ClassName": null
+          }
+        ]
+      },
+      "Failure": null,
+      "DurationMilliseconds": 52.7866
+    },
+    {
+      "Operation": "Bounded tree / Interactive Elements",
+      "Success": true,
+      "Data": {
+        "Depth": 3,
+        "MaximumElements": 100,
+        "Count": 3,
+        "Truncated": true,
+        "Status": "Success",
+        "Controls": [
+          {
+            "Id": "ui:11",
+            "ControlType": "Button",
+            "Name": "Open Navigation",
+            "AutomationId": "TogglePaneButton",
+            "ClassName": "Button",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": true,
+            "CanToggle": null,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:10"
+          },
+          {
+            "Id": "ui:14",
+            "ControlType": "Button",
+            "Name": "Keep on top",
+            "AutomationId": "NormalAlwaysOnTopButton",
+            "ClassName": "Button",
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": true,
+            "CanToggle": null,
+            "CanExpandCollapse": null,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:10"
+          },
+          {
+            "Id": "ui:18",
+            "ControlType": "MenuItem",
+            "Name": "[TEXT OMITTED]",
+            "AutomationId": "Item 1",
+            "ClassName": null,
+            "Value": null,
+            "IsVisible": true,
+            "IsEnabled": true,
+            "IsFocused": false,
+            "IsSelected": null,
+            "CanInvoke": null,
+            "CanToggle": null,
+            "CanExpandCollapse": true,
+            "CanSelect": null,
+            "CanSetValue": null,
+            "CanScroll": null,
+            "ParentId": "ui:17"
+          }
+        ]
+      },
+      "Failure": null,
+      "DurationMilliseconds": 122.2957
+    }
+  ]
+}

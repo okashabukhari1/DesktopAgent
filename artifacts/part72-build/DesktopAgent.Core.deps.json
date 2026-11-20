@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "DesktopAgent.Core/1.0.0": {
+        "runtime": {
+          "DesktopAgent.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DesktopAgent.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationIcon />
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesktopAgent.Core\DesktopAgent.Core.csproj" />
+    <ProjectReference Include="..\DesktopAgent.Infrastructure\DesktopAgent.Infrastructure.csproj" />
+    <ProjectReference Include="..\DesktopAgent.DevHook\DesktopAgent.DevHook.csproj" ReferenceOutputAssembly="false" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Character\**\README.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="CopyDeveloperRelay" AfterTargets="Build">
+    <ItemGroup><DeveloperRelayFiles Include="../DesktopAgent.DevHook/bin/$(Configuration)/net10.0-windows/agent-dev-hook.*" /></ItemGroup>
+    <Copy SourceFiles="@(DeveloperRelayFiles)" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+  </Target>
+  <!-- The relay is copied once after publishing; do not also inject duplicate SDK publish items. -->
+  <Target Name="CopyDeveloperRelayToPublishedFolder" AfterTargets="Publish">
+    <ItemGroup>
+      <PublishedRelayFiles Include="../DesktopAgent.DevHook/bin/$(Configuration)/net10.0-windows/agent-dev-hook.exe;../DesktopAgent.DevHook/bin/$(Configuration)/net10.0-windows/agent-dev-hook.dll;../DesktopAgent.DevHook/bin/$(Configuration)/net10.0-windows/agent-dev-hook.deps.json;../DesktopAgent.DevHook/bin/$(Configuration)/net10.0-windows/agent-dev-hook.runtimeconfig.json" />
+    </ItemGroup>
+    <Copy SourceFiles="@(PublishedRelayFiles)" DestinationFolder="$(PublishDir)" SkipUnchangedFiles="true" />
+  </Target>
+  <ItemGroup>
+    <Content Include="..\DesktopAgent.PythonWorker\*.py" Link="python-worker\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="..\DesktopAgent.PythonWorker\requirements.txt" Link="python-worker\requirements.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
